@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".course.AddSubjectActivity">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="80dp"
+        android:src="@drawable/exchange"
+        />
+    <TextView
+
+        android:textColor="#F44336"
+        android:text="Sửa Khóa Học"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:fontFamily="serif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên khoá học:"
+        android:layout_marginLeft="30dp"
+        />
+    <EditText
+        android:padding="10dp"
+        android:background="@drawable/et_bg"
+        android:layout_gravity="center"
+        android:id="@+id/ed1"
+        android:hint="Tên Khóa Học"
+        android:layout_width="300dp"
+        android:layout_height="50dp"></EditText>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số tín chỉ:"
+        android:layout_marginLeft="30dp"
+        />
+
+    <EditText
+        android:padding="10dp"
+        android:background="@drawable/et_bg"
+        android:layout_gravity="center"
+        android:id="@+id/ed2"
+        android:hint="Số tín chỉ"
+        android:layout_width="300dp"
+        android:layout_height="50dp"></EditText>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thời gian học::"
+        android:layout_marginLeft="30dp"
+        />
+    <EditText
+        android:padding="10dp"
+        android:background="@drawable/et_bg"
+        android:layout_gravity="center"
+        android:id="@+id/ed3"
+        android:hint="Thời gian học"
+        android:layout_width="300dp"
+        android:layout_height="50dp"></EditText>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Địa điểm:"
+        android:layout_marginLeft="30dp"
+        />
+    <EditText
+        android:padding="10dp"
+        android:background="@drawable/et_bg"
+        android:layout_gravity="center"
+        android:id="@+id/ed4"
+        android:hint="Địa điểm"
+        android:layout_width="300dp"
+        android:layout_height="50dp"></EditText>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/btupdate"
+        android:text="Sửa"
+        android:textStyle="bold"
+        android:background="@drawable/background_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

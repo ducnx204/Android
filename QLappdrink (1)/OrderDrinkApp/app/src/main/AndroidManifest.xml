@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sinhvien.orderdrinkapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OrderDrinkApp">
+        <activity android:name=".Activities.DanhsachActivity"></activity>
+        <activity android:name=".Activities.AddNhanvienActivity" />
+        <activity
+            android:name=".Activities.ChinhsuaActivity"
+            android:label="Sửa bàn ăn"
+            android:theme="@style/PopUpActivity" />
+        <activity android:name=".Activities.ThanhtoanActivity" />
+        <activity
+            android:name=".Activities.ThemMenuActivity"
+            android:label="số lượng món"
+            android:theme="@style/PopUpActivity" />
+        <activity android:name=".Activities.AddThongtinActivity" />
+        <activity android:name=".Activities.AddMenuActivity" />
+        <activity
+            android:name=".Activities.AddBangActivity"
+            android:label="@string/addTable"
+            android:theme="@style/PopUpActivity" />
+        <activity android:name=".Activities.HomeActivity" />
+        <activity android:name=".Activities.DangnhapActivity" />
+        <activity android:name=".Activities.Register2ndActivity" />
+        <activity android:name=".Activities.XinchaoActivity" />
+        <activity android:name=".Activities.RegisterActivity" />
+        <activity android:name=".Activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Expenditure Management</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="splash_title_name">MONEY MANAGER</string>
+</resources>

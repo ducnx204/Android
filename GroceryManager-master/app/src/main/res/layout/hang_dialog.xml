@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/edMaHang"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hình ảnh sản phẩm:"
+            android:textSize="15dp"
+            android:textStyle="italic"
+            />
+
+        <ImageButton
+            android:id="@+id/imgCamera"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:src="@drawable/outline_add_a_photo_black_36" />
+
+        <ImageButton
+            android:id="@+id/imgUpload"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:src="@drawable/outline_upload_file_black_36" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgSanPham"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/outline_image_black_48"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bo_tron"
+        app:errorEnabled="true"
+        android:id="@+id/tilTenHang"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edTenHang"
+            android:hint="Tên Hàng"
+            android:textSize="15dp"
+            android:textStyle="italic"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/tilGiaHang"
+        app:errorEnabled="true"
+        android:background="@drawable/bo_tron">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edGiaHang"
+            android:inputType="number"
+            android:hint="Giá Hàng (VND)"
+            android:textSize="15dp"
+            android:textStyle="italic"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <Spinner
+        android:background="@drawable/bo_tron"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spLoaiHang"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSaveHang"
+            android:text="Lưu"
+            android:drawableStart="@drawable/outline_save_white_24"
+            android:layout_marginHorizontal="20dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@drawable/bo_tron_button"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCancelHang"
+            android:text="Hủy"
+            android:drawableStart="@drawable/outline_cancel_white_24"
+            android:layout_marginHorizontal="20dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@drawable/bo_tron_button"/>
+    </LinearLayout>
+
+</LinearLayout>

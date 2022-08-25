@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Assignment_Android_PD05266</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="facebook_app_id">756055275022094</string> <string name="fb_login_protocol_scheme">fb756055275022094</string>
+</resources>

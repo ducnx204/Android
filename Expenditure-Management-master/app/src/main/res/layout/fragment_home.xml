@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.fragments.HomeFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@drawable/shape_main"
+                    android:layout_height="250dp"/>
+            </FrameLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginVertical="40dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Xin chào!"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:textColor="#fff"
+                    android:id="@+id/text1"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Số dư: 1000 VNĐ"
+                    android:id="@+id/text2"
+                    android:layout_below="@+id/text1"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:textColor="#fff"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:id="@+id/id_notification"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/ic_notifications_24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_toLeftOf="@+id/id_notification"
+                    android:layout_marginHorizontal="5dp"
+                    android:background="@drawable/ic_search_24dp"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_below="@+id/text2"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/view5"
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="20dp"
+                    android:background="@drawable/shape_center"
+                    android:layout_height="224dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="vertical"
+                            android:id="@+id/view1"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="64dp"
+                                android:background="@drawable/ic_money"
+                                android:layout_height="64dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="THU CHI"
+                                android:textStyle="bold"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="vertical"
+                            android:id="@+id/view2"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="64dp"
+                                android:background="@drawable/ic_bill_24dp"
+                                android:layout_height="64dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="HOÁ ĐƠN"
+                                android:textStyle="bold"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="vertical"
+                            android:id="@+id/view3"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="64dp"
+                                android:background="@drawable/ic_save_24dp"
+                                android:layout_height="64dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="TIẾT KIỆM"
+                                android:textStyle="bold"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:id="@+id/view4"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="64dp"
+                                android:background="@drawable/ic_graphic_24dp"
+                                android:layout_height="64dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="THỐNG KÊ"
+                                android:textStyle="bold"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Hoá đơn tháng này"
+                    android:textSize="18dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:paddingVertical="10dp"
+                    android:id="@+id/text3"
+                    android:layout_below="@+id/view5"
+                    android:layout_height="wrap_content"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:id="@+id/rc_bill"
+                    android:layout_below="@+id/text3"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".course.AddSubjectActivity">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_student"
+        />
+    <TextView
+        android:textColor="#F44336"
+        android:text="Đăng kí Khóa Học"
+        android:gravity="center"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên sinh viên:"
+        android:layout_marginLeft="30dp"
+        />
+    <EditText
+        android:layout_gravity="center"
+        android:id="@+id/EditTextStudentName"
+        android:background="@drawable/et_bg"
+        android:padding="10dp"
+        android:hint="Tên Sinh Viên"
+        android:layout_width="300dp"
+        android:layout_height="50dp"></EditText>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên sinh viên:"
+        android:layout_marginLeft="30dp"
+        />
+
+    <RadioGroup
+        android:layout_gravity="center"
+        android:background="@drawable/et_bg"
+        android:padding="10dp"        android:orientation="horizontal"
+        android:layout_width="300dp"
+        android:layout_height="70dp">
+
+        <RadioButton
+            android:id="@+id/radiobuttonMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:checked="true"
+            android:text="Nam"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:layout_marginLeft="100dp"
+            android:textColor="@color/black"
+            android:text="Nữ"
+
+            android:id="@+id/radiobuttonFeMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mã sinh viên:"
+        android:layout_marginLeft="30dp"
+        />
+    <EditText
+        android:layout_gravity="center"
+        android:id="@+id/EditTextStudentCode"
+        android:hint="Mã sinh viên"
+        android:background="@drawable/et_bg"
+        android:padding="10dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"></EditText>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày sinh:"
+        android:layout_marginLeft="30dp"
+        />
+    <EditText
+        android:inputType="datetime"
+        android:layout_gravity="center"
+        android:id="@+id/EditTextStudentBirthday"
+        android:hint="Ngày sinh"
+        android:background="@drawable/et_bg"
+        android:padding="10dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"></EditText>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/buttonAđdStudent"
+        android:text="Thêm"
+        android:background="@drawable/background_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
